@@ -1,0 +1,104 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #fff, #c5c5c5);
+    background-attachment: fixed;
+}
+nav ul{
+    border: 2px solid #000;
+    margin: 10px;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: black;
+    font-size: 18px;
+}
+
+#sessao_geral{
+    border: 2px solid #000;
+    margin: 10px;
+}
+
+#sessao_01{
+    border: 2px solid #000;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#campo_texto_e_cv{
+    border: 2px solid #000;
+}
+
+#sessao_02{
+    margin: 10px;
+    border: 2px solid black;
+}
+
+#titulo_segunda_sessao{
+    text-align: center;
+}
+
+#campo_de_projetos{
+    margin: 10px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.projeto{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer{
+    padding: 10px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+/* É recomendado usar texto para se referir às tecnologias, assim o recrutador pode dar um F3 no seu portfólio */
+
+.campo_das_tecnologias{
+}
+
+.tecnologias{
+    color: black;
+    padding: 10px;
+    display: inline-block;
+    height: 100%;
+    border: 1px solid black;
+}
+
+/* CSS DE RESPONSIVIDADE */
+
+@media (max-width:550px) {
+    nav ul,
+    #sessao_01,
+    #campo_de_texto_e_cv,
+    #campo_de_projetos{
+        border: 2px solid #000;
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        list-style: none;
+        padding: 10px;
+        justify-items: center;
+    }
+
+    span{
+        margin: 10px;
+        padding: 10px;
+    }
+}
